@@ -1,0 +1,98 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card card-body bg-dark p-4 text-white">
+
+                <h4>Actualiza proveedor</h4>
+
+                <form action="/proveedores/{{proveedor._id}}/editar" method="POST">
+
+                    <div>
+                        <label for="nombreEmpresa">Modifica nombre de empresa:</label>
+                        <input
+                            type="text"
+                            name="nombreEmpresa"
+                            value="{{proveedor.nombreEmpresa}}"
+                            class="form-control bg-dark text-white"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="nombreContacto">Modifica nombre de contacto:</label>
+                        <input
+                            type="text"
+                            name="nombreContacto"
+                            value="{{proveedor.nombreContacto}}"
+                            class="form-control bg-dark text-white"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="telefono">Modifica teléfono:</label>
+                        <input
+                            type="text"
+                            name="telefono"
+                            value="{{proveedor.telefono}}"
+                            class="form-control bg-dark text-white"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="correo">Modifica correo:</label>
+                        <input
+                            type="email"
+                            name="correo"
+                            value="{{proveedor.correo}}"
+                            class="form-control bg-dark text-white"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="direccion">Modifica dirección:</label>
+                        <input
+                            type="text"
+                            name="direccion"
+                            value="{{proveedor.direccion}}"
+                            class="form-control bg-dark text-white"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="tipoProducto">Modifica tipo de producto:</label>
+                        <input
+                            type="text"
+                            name="tipoProducto"
+                            value="{{proveedor.tipoProducto}}"
+                            class="form-control bg-dark text-white"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="rfc">Modifica RFC:</label>
+                        <input
+                            type="text"
+                            name="rfc"
+                            value="{{proveedor.rfc}}"
+                            class="form-control bg-dark text-white"
+                            required
+                        >
+                    </div>
+
+                    <br>
+
+                    <button class="btn btn-info">
+                        Actualizar
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

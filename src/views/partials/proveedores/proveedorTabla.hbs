@@ -1,0 +1,60 @@
+{{#if proveedores}}
+<table class="table table-bordered table-hover table-dark">
+    <thead>
+        <tr class="text-center">
+            <th>Num.</th>
+            <th>Empresa</th>
+            <th>Contacto</th>
+            <th>Teléfono</th>
+            <th>Correo</th>
+            <th>Dirección</th>
+            <th>Producto</th>
+            <th>RFC</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    {{#each proveedores}}
+    <tr>
+        <td>{{@index}}</td>
+        <td>{{nombreEmpresa}}</td>
+        <td>{{nombreContacto}}</td>
+        <td>{{telefono}}</td>
+        <td>{{correo}}</td>
+        <td>{{direccion}}</td>
+        <td>{{tipoProducto}}</td>
+        <td>{{rfc}}</td>
+
+        <td>
+            {{#if opcion}}
+                <a href="/proveedores/{{_id}}/status" class="btn btn-warning">
+                    Desactivado
+                </a>
+            {{else}}
+                <a href="/proveedores/{{_id}}/status" class="btn btn-success">
+                    Activado
+                </a>
+            {{/if}}
+
+            <a href="/proveedores/{{_id}}/editar" class="btn btn-info">
+                Actualizar
+            </a>
+
+            <a href="/proveedores/{{_id}}/eliminar" class="btn btn-danger">
+                Eliminar
+            </a>
+        </td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>
+
+{{else}}
+<div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="text-center text-white">
+        <h1>No hay proveedores</h1>
+        <img src="/icons/download.png" class="w-75" />
+    </div>
+</div>
+{{/if}}

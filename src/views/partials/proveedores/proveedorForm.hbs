@@ -1,0 +1,97 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+
+    <h4>Agregar proveedor</h4>
+
+    <form action="/proveedores/agregar" method="POST">
+
+        <div>
+            <label for="nombreEmpresa">Nombre de empresa:</label>
+            <input
+                type="text"
+                name="nombreEmpresa"
+                placeholder="Nombre de empresa"
+                id="nombreEmpresa"
+                class="form-control bg-dark text-white"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="nombreContacto">Nombre de contacto:</label>
+            <input
+                type="text"
+                name="nombreContacto"
+                placeholder="Nombre de contacto"
+                id="nombreContacto"
+                class="form-control bg-dark text-white"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input
+                type="text"
+                name="telefono"
+                placeholder="Teléfono"
+                id="telefono"
+                class="form-control bg-dark text-white"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="correo">Correo:</label>
+            <input
+                type="email"
+                name="correo"
+                placeholder="Correo"
+                id="correo"
+                class="form-control bg-dark text-white"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="direccion">Dirección:</label>
+            <input
+                type="text"
+                name="direccion"
+                placeholder="Dirección"
+                id="direccion"
+                class="form-control bg-dark text-white"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="tipoProducto">Tipo de producto:</label>
+            <input
+                type="text"
+                name="tipoProducto"
+                placeholder="Tipo de producto"
+                id="tipoProducto"
+                class="form-control bg-dark text-white"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="rfc">RFC:</label>
+            <input
+                type="text"
+                name="rfc"
+                placeholder="RFC"
+                id="rfc"
+                class="form-control bg-dark text-white"
+                required
+            />
+        </div>
+
+        <button class="btn btn-success btn-sm mt-2">
+            Agregar
+        </button>
+
+    </form>
+
+</div>
